@@ -1,0 +1,246 @@
+/* ======== Default Style SCC ======== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header{
+    background-color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header-logo{
+    float: left;
+    width: 30%;
+}
+.logo-image{
+    width: 60px;
+}
+
+/* ======== Header Menu Section CSS  ======== */
+
+.header-menu{
+    float: left;
+    width: 60%;
+}
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0 15px;
+}
+.header-menu ul li:hover > a{
+    color: rgb(67, 67, 199);
+}
+
+/* ========= DropDown Menu Section CSS ========= */
+
+.header-menu ul li ul{
+    position: absolute;
+    width: 210px;
+    top: 0%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .7s;
+}
+.header-menu ul li:hover ul{
+    top: 120%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li{
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.header-menu ul li ul li a{
+    display: block;
+    line-height: 0;
+    padding: 0 5px;
+}
+
+/* ======== Header Button Section CSS ======== */
+
+.header-button{
+    float: left;
+    width: 10%;
+}
+.header-button a{
+    color: #6278df;
+    display: inline-block;
+    border: 2px solid #6278df;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: .5s;
+    margin-top: 10px;
+}
+.header-button a:hover{
+    color: white;
+    background-color: #6278df;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-image: url(./Image/1605012323-image4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    position: relative;
+    z-index: 9;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: -1;
+}
+.banner-text h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.banner-text h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.banner-text a{
+    display: inline-block;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .4s;
+}
+.banner a:hover{
+    color: white;
+    background-color: #6278df;
+}
+
+/* ======== ontant Section CSS ======== */
+
+.contant{
+    background-color: #f7f9ff;
+    padding: 100px 0;
+}
+.contant-left{
+    float: left;
+    width: 48%;
+}
+.contant-right{
+    float: right;
+    width: 48%;
+}
+.contant-right h3{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.contant-right p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/* ======== Service Section CSS ======== */
+
+.service{
+    background-color: #fff;
+    padding: 50px 0;
+}
+.service-text h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+.service-text p{
+    color: #767676;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.service-item{
+    float: left;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.109);
+    margin: 15px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.icon{
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+}
+.icon i{
+    color: #6278df;
+    font-size: 40px;
+}
+.item-text h3{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.item-text p{
+    color: #767676;
+    font-size: 18px;
+    line-height: 25px;
+}
